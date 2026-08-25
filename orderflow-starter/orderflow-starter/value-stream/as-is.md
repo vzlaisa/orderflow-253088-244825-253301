@@ -16,3 +16,10 @@ Documenten el flujo real desde el commit baseline hasta una ejecución verificab
 3. Abrí los modulos del prooyecto en el IDE Netbeans.
 4. Realicé clean and build en cada modulo 
 5. pude correr el proyecto y realicé documentación de la clase NotificationService
+
+253088 - Ximena Rosales Panduro
+1. Aceptar invitación al repositorio de GitHub.
+2. Clonar el repositorio en mi computadora.
+3. Abrir el proyecto "orderflow" en el IDE Netbeans.
+4. Realizar clean and build en el proyecto completo para la corrección de los módulos.
+5. Correr el proyecto exitosamente.
