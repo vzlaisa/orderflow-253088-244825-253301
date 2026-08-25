@@ -9,3 +9,10 @@ Documenten el flujo real desde el commit baseline hasta una ejecución verificab
 4. Hacer commit y push para subir el proyecto (cfaec06ac067cb243aa6f58b7280f1d088b71d18)
 5. Abrir los modulos del proyecto en el IDE
 6. Hacer build a cada uno y correrlo
+
+244825 - Camila Zubía Higuera
+1. Acepte la invitacion al repositorio de GitHub.
+2. Clone el paquete en mi computadora
+3. Abrí los modulos del prooyecto en el IDE Netbeans.
+4. Realicé clean and build en cada modulo 
+5. pude correr el proyecto y realicé documentación de la clase NotificationService
