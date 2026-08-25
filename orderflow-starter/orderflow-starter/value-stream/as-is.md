@@ -2,3 +2,10 @@
 
 Documenten el flujo real desde el commit baseline hasta una ejecución verificable: trabajo, esperas, handoffs, feedback y fricciones observadas.
 
+253301 - Isabel Valenzuela
+1. Crear el repositorio en github y añadir a los colaboradores
+2. Clonar localmente el repositorio mediante GitHub Desktop
+3. Pegar la carpeta .zip del proyecto en la carpeta del repositorio
+4. Hacer commit y push para subir el proyecto (cfaec06ac067cb243aa6f58b7280f1d088b71d18)
+5. Abrir los modulos del proyecto en el IDE
+6. Hacer build a cada uno y correrlo
