@@ -33,6 +33,7 @@ Clonar el repositorio localmente, acceder al módulo orders-api, ejecutar mvn te
 - Integrante — contribución verificable:
 - Isabel Valenzuela - Creación de repositorio y commit inicial con baseline del proyecto. Documentación del flujo personal en AS-IS. Documentación de TO-BE.
 - Camila Zubía - Commit de la documentación de la clase NotificationService. Documentación del flujo personal en AS-IS. Documentación de TO-BE.
+- Ximena Rosales - Clonación del repositorio. Resolución de inconsistencias de construcción de módulos mediante clean & build del proyecto en IDE.
 
 ## Mini Definition of Done
 - [-] Repo y commit baseline identificables
