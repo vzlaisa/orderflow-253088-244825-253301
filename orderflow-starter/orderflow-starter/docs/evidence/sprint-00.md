@@ -24,7 +24,7 @@ Baseline funcional del proyecto en el repositorio.
 N/A — todavía no corresponde a este Sprint.
 
 ## Decisión y trade-off
-
+Se decidio utilizar un ReadMe para determinar todas las aplicaciones y herramientas necesarias dentro del proyecto, se espera que los miembros del equipo obtengan previo al proyecto estas herramientas. La desventaja identificada del usso del ReadMe a diferencia de un Docker es el trabajo manual de cada integrante.
 
 ## Demo mínima reproducible
 Clonar el repositorio localmente, acceder al módulo orders-api, ejecutar mvn test y verificar que las pruebas se ejecuten correctamente. Ejecutar el proyecto y acceder a http://localhost:8080/api/orders
@@ -32,7 +32,7 @@ Clonar el repositorio localmente, acceder al módulo orders-api, ejecutar mvn te
 ## Contribuciones del equipo
 - Integrante — contribución verificable:
 - Isabel Valenzuela - Creación de repositorio y commit inicial con baseline del proyecto. Documentación del flujo personal en AS-IS. Documentación de TO-BE.
-- 
+- Camila Zubía - Commit de la documentación de la clase NotificationService. Documentación del flujo personal en AS-IS. Documentación de TO-BE.
 
 ## Mini Definition of Done
 - [-] Repo y commit baseline identificables
@@ -42,6 +42,7 @@ Clonar el repositorio localmente, acceder al módulo orders-api, ejecutar mvn te
 - [-] Decisión/trade-off defendible
 
 ## Retro: Keep / Change / Next experiment
+En el siguiente sprint se espera que el repositorio cuente con el ReadMe, se continuará utilizando la plataforma de GitHub.
 
 ## Uso de IA
 - Herramienta:
