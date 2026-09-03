@@ -5,3 +5,4 @@
 - Criterio para pedir ayuda: Cualquier duda o en caso de que ocurra un error
 - Responsabilidad sobre evidencias: Siempre notificar cuando se realicé una entrega o parezca un error
 - Regla para decisiones y desacuerdos: Dialagorlas decisiones por medio del chat y llegar a acuerdos
+-Estrategia de branching: GitHub Flow
