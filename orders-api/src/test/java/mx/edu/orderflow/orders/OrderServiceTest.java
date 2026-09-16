@@ -14,9 +14,12 @@ class OrderServiceTest {
     } 
     
     @Test
-    void rejectsNegativeTotal(){
-        var s=new OrderService(); 
-        assertThrows(IllegalArgumentException.class,()->s.create("student-1",new BigDecimal("-1")));
+    void rejectsNegativeTotal() {
+        var s=new OrderService();
+        BigDecimal negativeTotal = new BigDecimal("-1");
+        var exception = assertThrows(IllegalArgumentException.class, () -> s.create("student-1", negativeTotal));
+        
+        assertTrue(exception != null);
     } 
     
     @Test
