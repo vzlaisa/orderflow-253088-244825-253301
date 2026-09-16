@@ -19,7 +19,7 @@ class OrderServiceTest {
         BigDecimal negativeTotal = new BigDecimal("-1");
         var exception = assertThrows(IllegalArgumentException.class, () -> s.create("student-1", negativeTotal));
         
-        assertTrue(exception != null);
+        assertNotNull(exception);
     } 
     
     @Test
