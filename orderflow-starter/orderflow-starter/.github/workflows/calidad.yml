@@ -2,9 +2,9 @@ name: SonarQube analysis
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -23,14 +23,14 @@ jobs:
       - name: Set up Java
         uses: actions/setup-java@v4
         with:
-          java-version: '17'
-          distribution: 'temurin'
+          java-version: "21"
+          distribution: "temurin"
           cache: maven
 
       - name: Build and run tests
         run: mvn verify
-        
-      - name: Analyze with SonarQube 
+
+      - name: Analyze with SonarQube
         uses: SonarSource/sonarqube-scan-action@7295e71c9583053f5bf40e9d4068a0c974603ec8
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -38,5 +38,4 @@ jobs:
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         with:
           # Additional arguments for the sonarcloud scanner
-          args:
-            -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}
+          args: -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}
