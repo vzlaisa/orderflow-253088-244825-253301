@@ -34,7 +34,7 @@ class OrderControllerTest {
         OrderController controller = new OrderController(service);
         
         CreateOrderRequest invalidRequest = new CreateOrderRequest("", new BigDecimal(100.00));
-        ResponseEntity<?> response = controller.create(invalidRequest);
+        ResponseEntity<Order> response = controller.create(invalidRequest);
         assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
     }
     

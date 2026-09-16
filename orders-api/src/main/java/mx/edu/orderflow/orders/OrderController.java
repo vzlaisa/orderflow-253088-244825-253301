@@ -22,11 +22,11 @@ public class OrderController {
         return service.find(id).map(ResponseEntity::ok).orElseGet(()->ResponseEntity.notFound().build());
     }
     
-    @PostMapping public ResponseEntity<?> create(@RequestBody CreateOrderRequest r){ 
+    @PostMapping public ResponseEntity<Order> create(@RequestBody CreateOrderRequest r){ 
         try {
             return ResponseEntity.status(HttpStatus.CREATED).body(service.create(r.customerId(),r.total()));
         }catch(IllegalArgumentException e){
-            return ResponseEntity.badRequest().body(e.getMessage());
+            return ResponseEntity.badRequest().build();
         }
     } 
 }
