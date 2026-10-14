@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, avance-2-testing ]
   pull_request:
     branches: [ main ]
   workflow_dispatch:
