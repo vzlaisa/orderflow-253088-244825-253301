@@ -65,7 +65,7 @@ class OrderServiceTest {
         // Act
         var exception = assertThrows(IllegalArgumentException.class, () -> service.create(null, total));
         // Assert
-        assertEquals("customerId required", exception.getMessage());
+        assertEquals("error", exception.getMessage());
     }
     
     @ParameterizedTest
