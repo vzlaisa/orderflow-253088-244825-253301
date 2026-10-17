@@ -1,8 +1,8 @@
 package mx.edu.orderflow.orders; 
 
-import static org.junit.jupiter.api.Assertions.*; 
 import java.math.BigDecimal; 
 import java.util.Optional;
+import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -65,7 +65,7 @@ class OrderServiceTest {
         // Act
         var exception = assertThrows(IllegalArgumentException.class, () -> service.create(null, total));
         // Assert
-        assertEquals("error", exception.getMessage());
+        assertEquals("customerId required", exception.getMessage());
     }
     
     @ParameterizedTest
