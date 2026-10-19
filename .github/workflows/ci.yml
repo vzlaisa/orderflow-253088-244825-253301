@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    name: Tests
+    name: Tests and Docker
     runs-on: ubuntu-latest
 
     steps:
@@ -33,3 +33,27 @@ jobs:
           name: surefire-reports
           path: target/surefire-reports/
           if-no-files-found: warn
+
+      - name: Configure Docker for HTTP Nexus registry
+        if: github.event_name != 'pull_request'
+        run: |
+          echo '{"insecure-registries":["3.93.108.23:8082"]}' | sudo tee /etc/docker/daemon.json
+          sudo systemctl restart docker
+
+      - name: Build Docker image with commit SHA
+        run: |
+          docker build \
+            -t 3.93.108.23:8082/orderflow-orders-api:${GITHUB_SHA} \
+            .
+
+      - name: Login to Nexus Docker registry
+        if: github.event_name != 'pull_request'
+        run: |
+          echo "${{ secrets.NEXUS_PASSWORD }}" | docker login 3.93.108.23:8082 \
+            --username "${{ secrets.NEXUS_USERNAME }}" \
+            --password-stdin
+
+      - name: Push Docker image to Nexus
+        if: github.event_name != 'pull_request'
+        run: |
+          docker push 3.93.108.23:8082/orderflow-orders-api:${GITHUB_SHA}

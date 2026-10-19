@@ -36,4 +36,12 @@
       </plugin>
     </plugins>
   </build>
+
+  <distributionManagement>
+    <!-- Conectarse a nexus en servidor-->
+    <repository>
+      <id>nexus-proyecto-snapshots</id>
+      <url>http://3.93.108.23:8081/repository/maven-snapshots/</url>
+    </repository>
+  </distributionManagement>
 </project>
